@@ -192,9 +192,9 @@ function Home() {
               ))}
             </div>
             <div className="mt-10 flex gap-3">
-              <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <Link to="/rendez-vous" className="btn-cta pulse-glow">
                 <Calendar className="h-4 w-4" /> Prendre rendez-vous
-              </a>
+              </Link>
             </div>
           </div>
 
