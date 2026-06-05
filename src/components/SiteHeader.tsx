@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
 import logo from "@/assets/logo-smc.png.asset.json";
-import { SMC } from "@/lib/smc-data";
+
 
 const NAV = [
   { to: "/le-centre", label: "Le centre" },
