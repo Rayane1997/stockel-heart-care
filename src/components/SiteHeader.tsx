@@ -38,10 +38,10 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex btn-primary">
+          <Link to="/rendez-vous" className="hidden md:inline-flex btn-cta pulse-glow">
             <Calendar className="h-4 w-4" />
             Prendre rendez-vous
-          </a>
+          </Link>
           <button
             onClick={() => setOpen(!open)}
             className="lg:hidden p-2 rounded-md hover:bg-muted"
