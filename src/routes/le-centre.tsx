@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Calendar, ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SMC } from "@/lib/smc-data";
+
 import reception from "@/assets/reception.jpg.asset.json";
 import dentalRoom from "@/assets/dental-room.jpg.asset.json";
 import waiting from "@/assets/waiting-detail.jpg.asset.json";
