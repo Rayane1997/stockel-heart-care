@@ -23,7 +23,7 @@ export const PRACTITIONERS = [
     name: "Dr. Chrysoula Karampela",
     speciality: "Médecine générale & prises de sang",
     booking: "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
-    languages: ["FR", "EN", "EL"],
+    languages: ["FR", "EN", "GR"],
     schedule: "Lundi, mardi, jeudi & vendredi · 9h – 17h",
   },
   {
