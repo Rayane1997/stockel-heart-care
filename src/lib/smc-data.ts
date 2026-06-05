@@ -59,7 +59,7 @@ export const SPECIALTIES = [
     short: "Prélèvements sur rendez-vous, sans temps d'attente.",
     description:
       "Prélèvements biologiques effectués par notre équipe infirmière, en partenariat avec un laboratoire agréé.",
-    booking: PRACTITIONERS[2].booking,
+    booking: PRACTITIONERS[1].booking,
   },
   {
     slug: "chirurgie-vasculaire",
@@ -67,6 +67,6 @@ export const SPECIALTIES = [
     short: "Consultations spécialisées en pathologies veineuses et artérielles.",
     description:
       "Évaluation, diagnostic et prise en charge des affections vasculaires par un chirurgien spécialisé.",
-    booking: PRACTITIONERS[3].booking,
+    booking: PRACTITIONERS[2].booking,
   },
 ];
