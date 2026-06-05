@@ -76,9 +76,8 @@ function LeCentre() {
           </h2>
           <div className="grid grid-cols-12 gap-4 md:gap-6">
             <img src={dentalRoom.url} alt="Cabinet dentaire" className="col-span-12 md:col-span-7 aspect-[4/3] object-cover rounded-2xl" />
-            <img src={waiting.url} alt="Détail" className="col-span-6 md:col-span-5 aspect-[3/4] object-cover rounded-2xl" />
-            <img src={office.url} alt="Bureau" className="col-span-6 md:col-span-5 aspect-[4/3] object-cover rounded-2xl" />
-            <img src={reception.url} alt="Réception" className="col-span-12 md:col-span-7 aspect-[16/10] object-cover rounded-2xl" />
+            <img src={waiting.url} alt="Détail" className="col-span-12 md:col-span-5 aspect-[3/4] object-cover rounded-2xl" />
+            <img src={office.url} alt="Bureau" className="col-span-12 aspect-[16/8] object-cover rounded-2xl" />
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Calendar, Languages } from "lucide-react";
+import { Calendar, Languages, Clock } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SMC, PRACTITIONERS } from "@/lib/smc-data";
@@ -39,8 +39,13 @@ function Praticiens() {
             </div>
             <p className="text-xs tracking-[0.18em] uppercase text-teal mb-2">{p.speciality}</p>
             <h3 className="font-serif text-2xl text-ink mb-3">{p.name}</h3>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground mb-5">
-              <Languages className="h-3.5 w-3.5" /> {p.languages.join(" · ")}
+            <div className="space-y-2 mb-5">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Languages className="h-3.5 w-3.5 shrink-0" /> {p.languages.join(" · ")}
+              </div>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Clock className="h-3.5 w-3.5 shrink-0" /> {p.schedule}
+              </div>
             </div>
             <a href={p.booking} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:opacity-80">
               <Calendar className="h-4 w-4" /> Prendre rendez-vous

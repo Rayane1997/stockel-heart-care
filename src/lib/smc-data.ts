@@ -15,28 +15,24 @@ export const PRACTITIONERS = [
     name: "Dr. Noha Fayed",
     speciality: "Dentisterie",
     booking: "https://www.doctoranytime.be/d/dentiste/noha-fayed?h=stockel-medical-center",
-    languages: ["FR", "EN", "NL"],
+    languages: ["FR", "EN", "NL", "AR"],
+    schedule: "Lundi & jeudi · 9h – 16h",
   },
   {
     slug: "chrysoula-karampela",
     name: "Dr. Chrysoula Karampela",
-    speciality: "Médecine générale",
+    speciality: "Médecine générale & prises de sang",
     booking: "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
-    languages: ["FR", "EN", "NL"],
-  },
-  {
-    slug: "chrysoula-karampela-blood",
-    name: "Dr. Chrysoula Karampela",
-    speciality: "Prises de sang",
-    booking: "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
-    languages: ["FR", "EN", "NL"],
+    languages: ["FR", "EN", "EL"],
+    schedule: "Lundi, mardi, jeudi & vendredi · 9h – 17h",
   },
   {
     slug: "sue-liza-eta",
     name: "Dr. Sue-Liza Eta",
     speciality: "Chirurgie vasculaire",
     booking: "https://www.doctoranytime.be/d/chirurgien-vasculaire/sue-liza-eta?h=stockel-medical-center",
-    languages: ["FR", "EN", "NL"],
+    languages: ["FR", "EN"],
+    schedule: "Lundi & samedi matin · 9h – 12h30",
   },
 ];
 
@@ -63,7 +59,7 @@ export const SPECIALTIES = [
     short: "Prélèvements sur rendez-vous, sans temps d'attente.",
     description:
       "Prélèvements biologiques effectués par notre équipe infirmière, en partenariat avec un laboratoire agréé.",
-    booking: PRACTITIONERS[2].booking,
+    booking: PRACTITIONERS[1].booking,
   },
   {
     slug: "chirurgie-vasculaire",
@@ -71,6 +67,6 @@ export const SPECIALTIES = [
     short: "Consultations spécialisées en pathologies veineuses et artérielles.",
     description:
       "Évaluation, diagnostic et prise en charge des affections vasculaires par un chirurgien spécialisé.",
-    booking: PRACTITIONERS[3].booking,
+    booking: PRACTITIONERS[2].booking,
   },
 ];

@@ -75,7 +75,7 @@ function Home() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Sur rendez-vous</div>
-                  <div className="text-sm font-medium text-ink">Lun–Ven · 8h–19h</div>
+                  <div className="text-sm font-medium text-ink">Lun–Ven · 8h–17h</div>
                 </div>
               </div>
             </div>
@@ -148,12 +148,10 @@ function Home() {
             <div className="col-span-6 md:col-span-4 aspect-[4/5] rounded-2xl overflow-hidden">
               <img src={waiting.url} alt="Détail salle d'attente" className="w-full h-full object-cover" />
             </div>
-            <div className="col-span-6 md:col-span-4 aspect-square rounded-2xl overflow-hidden">
+            <div className="col-span-12 md:col-span-12 aspect-[16/7] rounded-2xl overflow-hidden">
               <img src={office.url} alt="Bureau de consultation" className="w-full h-full object-cover" />
             </div>
-            <div className="col-span-12 md:col-span-8 aspect-[16/9] rounded-2xl overflow-hidden">
-              <img src={reception.url} alt="Réception du centre" className="w-full h-full object-cover" />
-            </div>
+
           </div>
 
           <div className="mt-12">
@@ -176,7 +174,7 @@ function Home() {
               {[
                 { i: MapPin, t: "Adresse", d: "3 Avenue de Hinnisdael\n1150 Woluwe-Saint-Pierre" },
                 { i: Phone, t: "Téléphone", d: SMC.phone, href: SMC.phoneHref },
-                { i: Clock, t: "Horaires", d: "Lundi – Vendredi · 8h00 – 19h00\nSamedi sur rendez-vous" },
+                { i: Clock, t: "Horaires", d: "Lun, mar, jeu & ven · 8h–17h\nSamedi sur rendez-vous · Mercredi fermé" },
               ].map(({ i: Icon, t, d, href }) => (
                 <div key={t} className="flex gap-5 border-b border-border pb-6">
                   <div className="h-11 w-11 rounded-full bg-primary/5 flex items-center justify-center shrink-0">

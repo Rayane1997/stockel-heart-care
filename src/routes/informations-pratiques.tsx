@@ -34,7 +34,7 @@ function Pratiques() {
             { i: MapPin, t: "Adresse", d: "3 Avenue de Hinnisdael\n1150 Woluwe-Saint-Pierre" },
             { i: Phone, t: "Téléphone", d: SMC.phone, href: SMC.phoneHref },
             { i: Mail, t: "Email", d: SMC.email, href: `mailto:${SMC.email}` },
-            { i: Clock, t: "Horaires", d: "Lundi – Vendredi · 8h00 – 19h00\nSamedi sur rendez-vous\nDimanche fermé" },
+            { i: Clock, t: "Horaires", d: "Lundi, mardi, jeudi & vendredi · 8h00 – 17h00\nSamedi sur rendez-vous\nMercredi & dimanche fermé" },
           ].map(({ i: Icon, t, d, href }) => (
             <div key={t} className="flex gap-5 border-b border-border pb-6">
               <div className="h-11 w-11 rounded-full bg-primary/5 flex items-center justify-center shrink-0">
