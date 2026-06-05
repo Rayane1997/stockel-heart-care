@@ -47,7 +47,7 @@ function Praticiens() {
                 <Clock className="h-3.5 w-3.5 shrink-0" /> {p.schedule}
               </div>
             </div>
-            <a href={p.booking} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:opacity-80">
+            <a href={p.booking} target="_blank" rel="noopener noreferrer" className="btn-cta w-full">
               <Calendar className="h-4 w-4" /> Prendre rendez-vous
             </a>
           </article>
