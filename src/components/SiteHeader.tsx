@@ -65,9 +65,9 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
-            <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-primary mt-2 self-start">
+            <Link to="/rendez-vous" onClick={() => setOpen(false)} className="btn-cta mt-2 self-start">
               <Calendar className="h-4 w-4" /> Prendre rendez-vous
-            </a>
+            </Link>
           </div>
         </div>
       )}
