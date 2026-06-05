@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Calendar, Languages } from "lucide-react";
+import { Calendar, Languages, Clock } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SMC, PRACTITIONERS } from "@/lib/smc-data";
