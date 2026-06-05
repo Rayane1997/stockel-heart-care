@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SpecialitesRouteImport } from './routes/specialites'
+import { Route as RendezVousRouteImport } from './routes/rendez-vous'
 import { Route as PraticiensRouteImport } from './routes/praticiens'
 import { Route as LeCentreRouteImport } from './routes/le-centre'
 import { Route as InformationsPratiquesRouteImport } from './routes/informations-pratiques'
@@ -18,6 +19,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const SpecialitesRoute = SpecialitesRouteImport.update({
   id: '/specialites',
   path: '/specialites',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RendezVousRoute = RendezVousRouteImport.update({
+  id: '/rendez-vous',
+  path: '/rendez-vous',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PraticiensRoute = PraticiensRouteImport.update({
@@ -46,6 +52,7 @@ export interface FileRoutesByFullPath {
   '/informations-pratiques': typeof InformationsPratiquesRoute
   '/le-centre': typeof LeCentreRoute
   '/praticiens': typeof PraticiensRoute
+  '/rendez-vous': typeof RendezVousRoute
   '/specialites': typeof SpecialitesRoute
 }
 export interface FileRoutesByTo {
@@ -53,6 +60,7 @@ export interface FileRoutesByTo {
   '/informations-pratiques': typeof InformationsPratiquesRoute
   '/le-centre': typeof LeCentreRoute
   '/praticiens': typeof PraticiensRoute
+  '/rendez-vous': typeof RendezVousRoute
   '/specialites': typeof SpecialitesRoute
 }
 export interface FileRoutesById {
@@ -61,6 +69,7 @@ export interface FileRoutesById {
   '/informations-pratiques': typeof InformationsPratiquesRoute
   '/le-centre': typeof LeCentreRoute
   '/praticiens': typeof PraticiensRoute
+  '/rendez-vous': typeof RendezVousRoute
   '/specialites': typeof SpecialitesRoute
 }
 export interface FileRouteTypes {
@@ -70,6 +79,7 @@ export interface FileRouteTypes {
     | '/informations-pratiques'
     | '/le-centre'
     | '/praticiens'
+    | '/rendez-vous'
     | '/specialites'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -77,6 +87,7 @@ export interface FileRouteTypes {
     | '/informations-pratiques'
     | '/le-centre'
     | '/praticiens'
+    | '/rendez-vous'
     | '/specialites'
   id:
     | '__root__'
@@ -84,6 +95,7 @@ export interface FileRouteTypes {
     | '/informations-pratiques'
     | '/le-centre'
     | '/praticiens'
+    | '/rendez-vous'
     | '/specialites'
   fileRoutesById: FileRoutesById
 }
@@ -92,6 +104,7 @@ export interface RootRouteChildren {
   InformationsPratiquesRoute: typeof InformationsPratiquesRoute
   LeCentreRoute: typeof LeCentreRoute
   PraticiensRoute: typeof PraticiensRoute
+  RendezVousRoute: typeof RendezVousRoute
   SpecialitesRoute: typeof SpecialitesRoute
 }
 
@@ -102,6 +115,13 @@ declare module '@tanstack/react-router' {
       path: '/specialites'
       fullPath: '/specialites'
       preLoaderRoute: typeof SpecialitesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rendez-vous': {
+      id: '/rendez-vous'
+      path: '/rendez-vous'
+      fullPath: '/rendez-vous'
+      preLoaderRoute: typeof RendezVousRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/praticiens': {
@@ -140,8 +160,19 @@ const rootRouteChildren: RootRouteChildren = {
   InformationsPratiquesRoute: InformationsPratiquesRoute,
   LeCentreRoute: LeCentreRoute,
   PraticiensRoute: PraticiensRoute,
+  RendezVousRoute: RendezVousRoute,
   SpecialitesRoute: SpecialitesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
