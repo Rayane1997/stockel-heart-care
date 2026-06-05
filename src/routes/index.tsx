@@ -148,12 +148,10 @@ function Home() {
             <div className="col-span-6 md:col-span-4 aspect-[4/5] rounded-2xl overflow-hidden">
               <img src={waiting.url} alt="Détail salle d'attente" className="w-full h-full object-cover" />
             </div>
-            <div className="col-span-6 md:col-span-4 aspect-square rounded-2xl overflow-hidden">
+            <div className="col-span-12 md:col-span-12 aspect-[16/7] rounded-2xl overflow-hidden">
               <img src={office.url} alt="Bureau de consultation" className="w-full h-full object-cover" />
             </div>
-            <div className="col-span-12 md:col-span-8 aspect-[16/9] rounded-2xl overflow-hidden">
-              <img src={reception.url} alt="Réception du centre" className="w-full h-full object-cover" />
-            </div>
+
           </div>
 
           <div className="mt-12">
