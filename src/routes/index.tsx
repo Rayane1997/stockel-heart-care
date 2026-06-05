@@ -42,9 +42,9 @@ function Home() {
               pour vous offrir des soins du quotidien dans un environnement serein, professionnel et accessible.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <Link to="/rendez-vous" className="btn-cta pulse-glow">
                 <Calendar className="h-4 w-4" /> Prendre rendez-vous
-              </a>
+              </Link>
               <Link to="/informations-pratiques" className="btn-outline">
                 Informations pratiques <ArrowRight className="h-4 w-4" />
               </Link>
