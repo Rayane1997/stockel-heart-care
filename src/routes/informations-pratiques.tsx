@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock, Calendar, Car, Train, Accessibility } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -50,9 +50,9 @@ function Pratiques() {
               </div>
             </div>
           ))}
-          <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <Link to="/rendez-vous" className="btn-cta pulse-glow">
             <Calendar className="h-4 w-4" /> Prendre rendez-vous en ligne
-          </a>
+          </Link>
         </div>
 
         <div className="rounded-3xl overflow-hidden border border-border min-h-[500px]">

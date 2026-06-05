@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
 import logo from "@/assets/logo-smc.png.asset.json";
-import { SMC } from "@/lib/smc-data";
+
 
 const NAV = [
   { to: "/le-centre", label: "Le centre" },
@@ -38,10 +38,10 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex btn-primary">
+          <Link to="/rendez-vous" className="hidden md:inline-flex btn-cta pulse-glow">
             <Calendar className="h-4 w-4" />
             Prendre rendez-vous
-          </a>
+          </Link>
           <button
             onClick={() => setOpen(!open)}
             className="lg:hidden p-2 rounded-md hover:bg-muted"
@@ -65,9 +65,9 @@ export function SiteHeader() {
                 {n.label}
               </Link>
             ))}
-            <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-primary mt-2 self-start">
+            <Link to="/rendez-vous" onClick={() => setOpen(false)} className="btn-cta mt-2 self-start">
               <Calendar className="h-4 w-4" /> Prendre rendez-vous
-            </a>
+            </Link>
           </div>
         </div>
       )}

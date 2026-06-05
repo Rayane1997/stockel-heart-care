@@ -189,6 +189,28 @@
   }
 }
 
+@utility btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.85rem;
+  background-image: linear-gradient(135deg, var(--color-primary), var(--color-teal));
+  color: var(--color-primary-foreground);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 9999px;
+  box-shadow: 0 10px 30px -10px color-mix(in oklab, var(--color-teal) 55%, transparent);
+  transition: all 0.3s ease;
+}
+@utility btn-cta {
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 36px -10px color-mix(in oklab, var(--color-teal) 70%, transparent);
+  }
+}
+
 @utility fade-up {
   animation: fadeUp 0.8s ease-out both;
 }
@@ -197,3 +219,13 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-teal) 45%, transparent); }
+  50% { box-shadow: 0 0 0 10px transparent; }
+}
+
+@utility pulse-glow {
+  animation: pulseGlow 2.4s ease-out infinite;
+}
+
