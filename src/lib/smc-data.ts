@@ -1,7 +1,7 @@
 export const SMC = {
   name: "Stockel Medical Center",
   short: "SMC",
-  address: "3 Avenue de Hinnisdael, 1150 Woluwe-Saint-Pierre",
+  address: "3 Avenue de Hinnisdael, 1150 Woluwe Saint-Pierre",
   phone: "02/705.30.32",
   phoneHref: "tel:+3227053032",
   email: "secretariat@stockelmedicalcenter.com",

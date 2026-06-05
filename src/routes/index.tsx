@@ -12,10 +12,10 @@ import office from "@/assets/office.jpg.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Stockel Medical Center — Centre médical à Woluwe-Saint-Pierre" },
+      { title: "Stockel Medical Center — Centre médical à Woluwe Saint-Pierre" },
       { name: "description", content: "Centre médical pluridisciplinaire à Stockel : dentisterie, médecine générale, prises de sang, chirurgie vasculaire. Cadre serein, équipe attentive, rendez-vous en ligne." },
       { property: "og:title", content: "Stockel Medical Center" },
-      { property: "og:description", content: "Centre médical pluridisciplinaire à Stockel — Woluwe-Saint-Pierre." },
+      { property: "og:description", content: "Centre médical pluridisciplinaire à Stockel — Woluwe Saint-Pierre." },
       { property: "og:image", content: reception.url },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -172,7 +172,7 @@ function Home() {
             </h2>
             <div className="space-y-6">
               {[
-                { i: MapPin, t: "Adresse", d: "3 Avenue de Hinnisdael\n1150 Woluwe-Saint-Pierre" },
+                { i: MapPin, t: "Adresse", d: "3 Avenue de Hinnisdael\n1150 Woluwe Saint-Pierre" },
                 { i: Phone, t: "Téléphone", d: SMC.phone, href: SMC.phoneHref },
                 { i: Clock, t: "Horaires", d: "Lun, mar, jeu & ven · 8h–17h\nSamedi sur rendez-vous · Mercredi fermé" },
               ].map(({ i: Icon, t, d, href }) => (
@@ -201,7 +201,7 @@ function Home() {
           <div className="rounded-3xl overflow-hidden border border-border bg-card aspect-[4/5] lg:aspect-auto min-h-[500px]">
             <iframe
               title="Carte du centre"
-              src="https://www.google.com/maps?q=3+Avenue+de+Hinnisdael,+1150+Woluwe-Saint-Pierre&output=embed"
+              src="https://www.google.com/maps?q=3+Avenue+de+Hinnisdael,+1150+Woluwe Saint-Pierre&output=embed"
               className="w-full h-full"
               loading="lazy"
             />

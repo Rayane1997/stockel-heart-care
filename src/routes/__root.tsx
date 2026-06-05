@@ -55,11 +55,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Stockel Medical Center — Centre médical à Woluwe-Saint-Pierre" },
+      { title: "Stockel Medical Center — Centre médical à Woluwe Saint-Pierre" },
       { name: "description", content: "Centre médical pluridisciplinaire à Stockel : dentisterie, médecine générale, prises de sang, chirurgie vasculaire. Prise de rendez-vous en ligne." },
       { name: "author", content: "Stockel Medical Center" },
       { property: "og:title", content: "Stockel Medical Center" },
-      { property: "og:description", content: "Centre médical pluridisciplinaire à Woluwe-Saint-Pierre." },
+      { property: "og:description", content: "Centre médical pluridisciplinaire à Woluwe Saint-Pierre." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Stockel Medical Center" },
     ],

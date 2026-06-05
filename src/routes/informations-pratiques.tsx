@@ -8,7 +8,7 @@ export const Route = createFileRoute("/informations-pratiques")({
   head: () => ({
     meta: [
       { title: "Informations pratiques — Stockel Medical Center" },
-      { name: "description", content: "Adresse, horaires, accès et contact du Stockel Medical Center à Woluwe-Saint-Pierre." },
+      { name: "description", content: "Adresse, horaires, accès et contact du Stockel Medical Center à Woluwe Saint-Pierre." },
       { property: "og:title", content: "Informations pratiques — Stockel Medical Center" },
     ],
     links: [{ rel: "canonical", href: "/informations-pratiques" }],
@@ -31,7 +31,7 @@ function Pratiques() {
       <section className="container-smc grid lg:grid-cols-2 gap-12 pb-20">
         <div className="space-y-6">
           {[
-            { i: MapPin, t: "Adresse", d: "3 Avenue de Hinnisdael\n1150 Woluwe-Saint-Pierre" },
+            { i: MapPin, t: "Adresse", d: "3 Avenue de Hinnisdael\n1150 Woluwe Saint-Pierre" },
             { i: Phone, t: "Téléphone", d: SMC.phone, href: SMC.phoneHref },
             { i: Mail, t: "Email", d: SMC.email, href: `mailto:${SMC.email}` },
             { i: Clock, t: "Horaires", d: "Lundi, mardi, jeudi & vendredi · 8h00 – 17h00\nSamedi sur rendez-vous\nMercredi & dimanche fermé" },
@@ -58,7 +58,7 @@ function Pratiques() {
         <div className="rounded-3xl overflow-hidden border border-border min-h-[500px]">
           <iframe
             title="Carte"
-            src="https://www.google.com/maps?q=3+Avenue+de+Hinnisdael,+1150+Woluwe-Saint-Pierre&output=embed"
+            src="https://www.google.com/maps?q=3+Avenue+de+Hinnisdael,+1150+Woluwe Saint-Pierre&output=embed"
             className="w-full h-full"
             loading="lazy"
           />
@@ -89,7 +89,7 @@ function Pratiques() {
             { q: "Comment prendre rendez-vous ?", a: "Via la plateforme Doctor Anytime accessible depuis le bouton « Prendre rendez-vous ». Vous pouvez aussi nous appeler au " + SMC.phone + "." },
             { q: "En quelles langues consultez-vous ?", a: "Nos praticiens consultent en français, en anglais et en néerlandais." },
             { q: "Acceptez-vous les nouveaux patients ?", a: "Oui, dans la plupart de nos spécialités. La disponibilité dépend du praticien — vérifiez directement sur la plateforme de réservation." },
-            { q: "Que faire en cas d'urgence ?", a: "En cas d'urgence vitale, composez le 112. Pour les urgences non vitales hors horaires, contactez le service de garde de Woluwe-Saint-Pierre." },
+            { q: "Que faire en cas d'urgence ?", a: "En cas d'urgence vitale, composez le 112. Pour les urgences non vitales hors horaires, contactez le service de garde de Woluwe Saint-Pierre." },
           ].map((f) => (
             <details key={f.q} className="group border-b border-border pb-5">
               <summary className="cursor-pointer font-serif text-xl text-ink list-none flex justify-between items-center">
