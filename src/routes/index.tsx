@@ -75,7 +75,7 @@ function Home() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Sur rendez-vous</div>
-                  <div className="text-sm font-medium text-ink">Lun–Ven · 8h–19h</div>
+                  <div className="text-sm font-medium text-ink">Lun–Ven · 8h–17h</div>
                 </div>
               </div>
             </div>
