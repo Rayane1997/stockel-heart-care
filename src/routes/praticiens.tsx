@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Calendar, Languages } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { SMC, SPECIALTIES } from "@/lib/smc-data";
+import { SMC, PRACTITIONERS } from "@/lib/smc-data";
 
 export const Route = createFileRoute("/praticiens")({
   head: () => ({
@@ -32,19 +32,17 @@ function Praticiens() {
       </section>
 
       <section className="container-smc py-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {SPECIALTIES.flatMap((s) => [
-          { name: "Dr. À compléter", speciality: s.title, slug: s.slug },
-        ]).map((p, i) => (
-          <article key={i} className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition">
+        {PRACTITIONERS.map((p) => (
+          <article key={p.slug} className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition">
             <div className="aspect-square rounded-xl bg-gradient-to-br from-sand to-secondary/40 mb-5 flex items-center justify-center">
               <span className="font-serif text-5xl text-primary/30">SMC</span>
             </div>
             <p className="text-xs tracking-[0.18em] uppercase text-teal mb-2">{p.speciality}</p>
             <h3 className="font-serif text-2xl text-ink mb-3">{p.name}</h3>
             <div className="flex items-center gap-2 text-xs text-muted-foreground mb-5">
-              <Languages className="h-3.5 w-3.5" /> FR · EN · NL
+              <Languages className="h-3.5 w-3.5" /> {p.languages.join(" · ")}
             </div>
-            <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:opacity-80">
+            <a href={p.booking} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary hover:opacity-80">
               <Calendar className="h-4 w-4" /> Prendre rendez-vous
             </a>
           </article>
