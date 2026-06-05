@@ -122,7 +122,7 @@ function Home() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {SPECIALTIES.map((s, i) => (
-            <SpecialtyCard key={s.slug} title={s.title} short={s.short} number={String(i + 1).padStart(2, "0")} />
+            <SpecialtyCard key={s.slug} title={s.title} short={s.short} number={String(i + 1).padStart(2, "0")} href={s.booking} />
           ))}
         </div>
       </section>

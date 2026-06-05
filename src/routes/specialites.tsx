@@ -42,7 +42,7 @@ function Specialites() {
               <p className="text-muted-foreground leading-relaxed max-w-2xl">{s.description}</p>
             </div>
             <div className="lg:col-span-3 lg:text-right">
-              <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <a href={s.booking} target="_blank" rel="noopener noreferrer" className="btn-outline">
                 <Calendar className="h-4 w-4" /> Rendez-vous
               </a>
             </div>
