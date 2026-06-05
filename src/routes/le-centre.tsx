@@ -88,9 +88,9 @@ function LeCentre() {
         </h2>
         <p className="mt-5 text-muted-foreground">Réservation en ligne via Doctor Anytime, 24h/24.</p>
         <div className="mt-8 flex justify-center gap-3 flex-wrap">
-          <a href={SMC.booking} target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <Link to="/rendez-vous" className="btn-cta pulse-glow">
             <Calendar className="h-4 w-4" /> Prendre rendez-vous
-          </a>
+          </Link>
           <Link to="/specialites" className="btn-outline">
             Voir les spécialités <ArrowRight className="h-4 w-4" />
           </Link>
