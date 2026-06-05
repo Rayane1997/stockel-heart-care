@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import { SMC } from "@/lib/smc-data";
 
-export function SpecialtyCard({ title, short, number }: { title: string; short: string; number: string }) {
+export function SpecialtyCard({ title, short, number, href }: { title: string; short: string; number: string; href?: string }) {
   return (
     <a
-      href={SMC.booking}
+      href={href || SMC.booking}
       target="_blank"
       rel="noopener noreferrer"
       className="group relative block bg-card border border-border rounded-2xl p-8 hover:border-primary/40 transition-all duration-500 hover:shadow-[0_20px_60px_-30px_rgba(40,60,90,0.25)]"
