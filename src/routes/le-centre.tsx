@@ -12,7 +12,7 @@ export const Route = createFileRoute("/le-centre")({
   head: () => ({
     meta: [
       { title: "Le centre — Stockel Medical Center" },
-      { name: "description", content: "Découvrez le Stockel Medical Center à Woluwe-Saint-Pierre : un centre médical pluridisciplinaire chaleureux et lumineux." },
+      { name: "description", content: "Découvrez le Stockel Medical Center à Woluwe Saint-Pierre : un centre médical pluridisciplinaire chaleureux et lumineux." },
       { property: "og:title", content: "Le centre — Stockel Medical Center" },
       { property: "og:image", content: reception.url },
     ],

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/specialites")({
   head: () => ({
     meta: [
       { title: "Spécialités — Stockel Medical Center" },
-      { name: "description", content: "Dentisterie, médecine générale, prises de sang, chirurgie vasculaire à Stockel — Woluwe-Saint-Pierre." },
+      { name: "description", content: "Dentisterie, médecine générale, prises de sang, chirurgie vasculaire à Stockel — Woluwe Saint-Pierre." },
       { property: "og:title", content: "Spécialités — Stockel Medical Center" },
     ],
     links: [{ rel: "canonical", href: "/specialites" }],

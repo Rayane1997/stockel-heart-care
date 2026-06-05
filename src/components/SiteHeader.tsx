@@ -20,7 +20,7 @@ export function SiteHeader() {
           <img src={logo.url} alt="Stockel Medical Center" className="h-11 w-11 object-contain" />
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-serif text-lg text-ink">Stockel Medical Center</span>
-            <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">Woluwe-Saint-Pierre</span>
+            <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">Woluwe Saint-Pierre</span>
           </div>
         </Link>
 
