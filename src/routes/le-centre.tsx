@@ -3,10 +3,6 @@ import { Calendar, ArrowRight } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-import reception from "@/assets/reception.jpg.asset.json";
-import dentalRoom from "@/assets/dental-room.jpg.asset.json";
-import waiting from "@/assets/waiting-detail.jpg.asset.json";
-import office from "@/assets/office.jpg.asset.json";
 
 export const Route = createFileRoute("/le-centre")({
   head: () => ({
@@ -14,7 +10,7 @@ export const Route = createFileRoute("/le-centre")({
       { title: "Le centre — Stockel Medical Center" },
       { name: "description", content: "Découvrez le Stockel Medical Center à Woluwe Saint-Pierre : un centre médical pluridisciplinaire chaleureux et lumineux." },
       { property: "og:title", content: "Le centre — Stockel Medical Center" },
-      { property: "og:image", content: reception.url },
+      { property: "og:image", content: "/images/reception.jpg" },
     ],
     links: [{ rel: "canonical", href: "/le-centre" }],
   }),
@@ -43,7 +39,7 @@ function LeCentre() {
 
       <section className="container-smc">
         <div className="aspect-[21/9] rounded-3xl overflow-hidden">
-          <img src={reception.url} alt="Réception du centre" className="w-full h-full object-cover" />
+          <img src="/images/reception.jpg" alt="Réception du centre" className="w-full h-full object-cover" />
         </div>
       </section>
 
@@ -75,9 +71,9 @@ function LeCentre() {
             L'ambiance du centre, en images.
           </h2>
           <div className="grid grid-cols-12 gap-4 md:gap-6">
-            <img src={dentalRoom.url} alt="Cabinet dentaire" className="col-span-12 md:col-span-7 aspect-[4/3] object-cover rounded-2xl" />
-            <img src={waiting.url} alt="Détail" className="col-span-12 md:col-span-5 aspect-[3/4] object-cover rounded-2xl" />
-            <img src={office.url} alt="Bureau" className="col-span-12 aspect-[16/8] object-cover rounded-2xl" />
+            <img src="/images/dental-room.jpg" alt="Cabinet dentaire" className="col-span-12 md:col-span-7 aspect-[4/3] object-cover rounded-2xl" />
+            <img src="/images/waiting-detail.jpg" alt="Détail" className="col-span-12 md:col-span-5 aspect-[3/4] object-cover rounded-2xl" />
+            <img src="/images/office.jpg" alt="Bureau" className="col-span-12 aspect-[16/8] object-cover rounded-2xl" />
           </div>
         </div>
       </section>

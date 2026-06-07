@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
-import logo from "@/assets/logo-smc.png.asset.json";
 
 
 const NAV = [
@@ -17,7 +16,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border/60">
       <div className="container-smc flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo.url} alt="Stockel Medical Center" className="h-11 w-11 object-contain" />
+          <img src="/images/logo-smc.png" alt="Stockel Medical Center" className="h-11 w-11 object-contain" />
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-serif text-lg text-ink">Stockel Medical Center</span>
             <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">Woluwe Saint-Pierre</span>

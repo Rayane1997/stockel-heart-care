@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Calendar } from "lucide-react";
-import logo from "@/assets/logo-smc.png.asset.json";
 import { SMC } from "@/lib/smc-data";
 
 export function SiteFooter() {
@@ -9,7 +8,7 @@ export function SiteFooter() {
       <div className="container-smc py-20 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3 mb-6">
-            <img src={logo.url} alt="" className="h-12 w-12 bg-background/10 rounded-full p-1" />
+            <img src="/images/logo-smc.png" alt="" className="h-12 w-12 bg-background/10 rounded-full p-1" />
             <div>
               <div className="font-serif text-xl">Stockel Medical Center</div>
               <div className="text-xs tracking-[0.2em] uppercase opacity-70">Woluwe Saint-Pierre</div>
