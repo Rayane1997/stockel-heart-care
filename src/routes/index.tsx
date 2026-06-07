@@ -4,10 +4,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SpecialtyCard } from "@/components/SpecialtyCard";
 import { SMC, SPECIALTIES } from "@/lib/smc-data";
-import reception from "@/assets/reception.jpg.asset.json";
-import dentalRoom from "@/assets/dental-room.jpg.asset.json";
-import waiting from "@/assets/waiting-detail.jpg.asset.json";
-import office from "@/assets/office.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -16,7 +12,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Centre médical pluridisciplinaire à Stockel : dentisterie, médecine générale, prises de sang, chirurgie vasculaire. Cadre serein, équipe attentive, rendez-vous en ligne." },
       { property: "og:title", content: "Stockel Medical Center" },
       { property: "og:description", content: "Centre médical pluridisciplinaire à Stockel — Woluwe Saint-Pierre." },
-      { property: "og:image", content: reception.url },
+      { property: "og:image", content: "/images/reception.jpg" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -66,7 +62,7 @@ function Home() {
 
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand">
-              <img src={reception.url} alt="Réception du Stockel Medical Center" className="absolute inset-0 w-full h-full object-cover" />
+              <img src="/images/reception.jpg" alt="Réception du Stockel Medical Center" className="absolute inset-0 w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-2xl p-5 shadow-lg max-w-[240px] hidden md:block">
               <div className="flex items-center gap-3">
@@ -143,13 +139,13 @@ function Home() {
 
           <div className="grid grid-cols-12 gap-4 md:gap-6">
             <div className="col-span-12 md:col-span-8 aspect-[16/10] rounded-2xl overflow-hidden">
-              <img src={dentalRoom.url} alt="Cabinet de dentisterie" className="w-full h-full object-cover" />
+              <img src="/images/dental-room.jpg" alt="Cabinet de dentisterie" className="w-full h-full object-cover" />
             </div>
             <div className="col-span-6 md:col-span-4 aspect-[4/5] rounded-2xl overflow-hidden">
-              <img src={waiting.url} alt="Détail salle d'attente" className="w-full h-full object-cover" />
+              <img src="/images/waiting-detail.jpg" alt="Détail salle d'attente" className="w-full h-full object-cover" />
             </div>
             <div className="col-span-12 md:col-span-12 aspect-[16/7] rounded-2xl overflow-hidden">
-              <img src={office.url} alt="Bureau de consultation" className="w-full h-full object-cover" />
+              <img src="/images/office.jpg" alt="Bureau de consultation" className="w-full h-full object-cover" />
             </div>
 
           </div>
