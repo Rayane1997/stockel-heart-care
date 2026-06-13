@@ -15,6 +15,18 @@ import { Route as PraticiensRouteImport } from './routes/praticiens'
 import { Route as LeCentreRouteImport } from './routes/le-centre'
 import { Route as InformationsPratiquesRouteImport } from './routes/informations-pratiques'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as NlIndexRouteImport } from './routes/nl/index'
+import { Route as EnIndexRouteImport } from './routes/en/index'
+import { Route as NlSpecialitesRouteImport } from './routes/nl/specialites'
+import { Route as NlRendezVousRouteImport } from './routes/nl/rendez-vous'
+import { Route as NlPraticiensRouteImport } from './routes/nl/praticiens'
+import { Route as NlLeCentreRouteImport } from './routes/nl/le-centre'
+import { Route as NlInformationsPratiquesRouteImport } from './routes/nl/informations-pratiques'
+import { Route as EnSpecialitesRouteImport } from './routes/en/specialites'
+import { Route as EnRendezVousRouteImport } from './routes/en/rendez-vous'
+import { Route as EnPraticiensRouteImport } from './routes/en/praticiens'
+import { Route as EnLeCentreRouteImport } from './routes/en/le-centre'
+import { Route as EnInformationsPratiquesRouteImport } from './routes/en/informations-pratiques'
 
 const SpecialitesRoute = SpecialitesRouteImport.update({
   id: '/specialites',
@@ -46,6 +58,66 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NlIndexRoute = NlIndexRouteImport.update({
+  id: '/nl/',
+  path: '/nl/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnIndexRoute = EnIndexRouteImport.update({
+  id: '/en/',
+  path: '/en/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlSpecialitesRoute = NlSpecialitesRouteImport.update({
+  id: '/nl/specialites',
+  path: '/nl/specialites',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlRendezVousRoute = NlRendezVousRouteImport.update({
+  id: '/nl/rendez-vous',
+  path: '/nl/rendez-vous',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlPraticiensRoute = NlPraticiensRouteImport.update({
+  id: '/nl/praticiens',
+  path: '/nl/praticiens',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlLeCentreRoute = NlLeCentreRouteImport.update({
+  id: '/nl/le-centre',
+  path: '/nl/le-centre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NlInformationsPratiquesRoute = NlInformationsPratiquesRouteImport.update({
+  id: '/nl/informations-pratiques',
+  path: '/nl/informations-pratiques',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnSpecialitesRoute = EnSpecialitesRouteImport.update({
+  id: '/en/specialites',
+  path: '/en/specialites',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnRendezVousRoute = EnRendezVousRouteImport.update({
+  id: '/en/rendez-vous',
+  path: '/en/rendez-vous',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnPraticiensRoute = EnPraticiensRouteImport.update({
+  id: '/en/praticiens',
+  path: '/en/praticiens',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnLeCentreRoute = EnLeCentreRouteImport.update({
+  id: '/en/le-centre',
+  path: '/en/le-centre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnInformationsPratiquesRoute = EnInformationsPratiquesRouteImport.update({
+  id: '/en/informations-pratiques',
+  path: '/en/informations-pratiques',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -54,6 +126,18 @@ export interface FileRoutesByFullPath {
   '/praticiens': typeof PraticiensRoute
   '/rendez-vous': typeof RendezVousRoute
   '/specialites': typeof SpecialitesRoute
+  '/en/informations-pratiques': typeof EnInformationsPratiquesRoute
+  '/en/le-centre': typeof EnLeCentreRoute
+  '/en/praticiens': typeof EnPraticiensRoute
+  '/en/rendez-vous': typeof EnRendezVousRoute
+  '/en/specialites': typeof EnSpecialitesRoute
+  '/nl/informations-pratiques': typeof NlInformationsPratiquesRoute
+  '/nl/le-centre': typeof NlLeCentreRoute
+  '/nl/praticiens': typeof NlPraticiensRoute
+  '/nl/rendez-vous': typeof NlRendezVousRoute
+  '/nl/specialites': typeof NlSpecialitesRoute
+  '/en/': typeof EnIndexRoute
+  '/nl/': typeof NlIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -62,6 +146,18 @@ export interface FileRoutesByTo {
   '/praticiens': typeof PraticiensRoute
   '/rendez-vous': typeof RendezVousRoute
   '/specialites': typeof SpecialitesRoute
+  '/en/informations-pratiques': typeof EnInformationsPratiquesRoute
+  '/en/le-centre': typeof EnLeCentreRoute
+  '/en/praticiens': typeof EnPraticiensRoute
+  '/en/rendez-vous': typeof EnRendezVousRoute
+  '/en/specialites': typeof EnSpecialitesRoute
+  '/nl/informations-pratiques': typeof NlInformationsPratiquesRoute
+  '/nl/le-centre': typeof NlLeCentreRoute
+  '/nl/praticiens': typeof NlPraticiensRoute
+  '/nl/rendez-vous': typeof NlRendezVousRoute
+  '/nl/specialites': typeof NlSpecialitesRoute
+  '/en': typeof EnIndexRoute
+  '/nl': typeof NlIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -71,6 +167,18 @@ export interface FileRoutesById {
   '/praticiens': typeof PraticiensRoute
   '/rendez-vous': typeof RendezVousRoute
   '/specialites': typeof SpecialitesRoute
+  '/en/informations-pratiques': typeof EnInformationsPratiquesRoute
+  '/en/le-centre': typeof EnLeCentreRoute
+  '/en/praticiens': typeof EnPraticiensRoute
+  '/en/rendez-vous': typeof EnRendezVousRoute
+  '/en/specialites': typeof EnSpecialitesRoute
+  '/nl/informations-pratiques': typeof NlInformationsPratiquesRoute
+  '/nl/le-centre': typeof NlLeCentreRoute
+  '/nl/praticiens': typeof NlPraticiensRoute
+  '/nl/rendez-vous': typeof NlRendezVousRoute
+  '/nl/specialites': typeof NlSpecialitesRoute
+  '/en/': typeof EnIndexRoute
+  '/nl/': typeof NlIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -81,6 +189,18 @@ export interface FileRouteTypes {
     | '/praticiens'
     | '/rendez-vous'
     | '/specialites'
+    | '/en/informations-pratiques'
+    | '/en/le-centre'
+    | '/en/praticiens'
+    | '/en/rendez-vous'
+    | '/en/specialites'
+    | '/nl/informations-pratiques'
+    | '/nl/le-centre'
+    | '/nl/praticiens'
+    | '/nl/rendez-vous'
+    | '/nl/specialites'
+    | '/en/'
+    | '/nl/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -89,6 +209,18 @@ export interface FileRouteTypes {
     | '/praticiens'
     | '/rendez-vous'
     | '/specialites'
+    | '/en/informations-pratiques'
+    | '/en/le-centre'
+    | '/en/praticiens'
+    | '/en/rendez-vous'
+    | '/en/specialites'
+    | '/nl/informations-pratiques'
+    | '/nl/le-centre'
+    | '/nl/praticiens'
+    | '/nl/rendez-vous'
+    | '/nl/specialites'
+    | '/en'
+    | '/nl'
   id:
     | '__root__'
     | '/'
@@ -97,6 +229,18 @@ export interface FileRouteTypes {
     | '/praticiens'
     | '/rendez-vous'
     | '/specialites'
+    | '/en/informations-pratiques'
+    | '/en/le-centre'
+    | '/en/praticiens'
+    | '/en/rendez-vous'
+    | '/en/specialites'
+    | '/nl/informations-pratiques'
+    | '/nl/le-centre'
+    | '/nl/praticiens'
+    | '/nl/rendez-vous'
+    | '/nl/specialites'
+    | '/en/'
+    | '/nl/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -106,6 +250,18 @@ export interface RootRouteChildren {
   PraticiensRoute: typeof PraticiensRoute
   RendezVousRoute: typeof RendezVousRoute
   SpecialitesRoute: typeof SpecialitesRoute
+  EnInformationsPratiquesRoute: typeof EnInformationsPratiquesRoute
+  EnLeCentreRoute: typeof EnLeCentreRoute
+  EnPraticiensRoute: typeof EnPraticiensRoute
+  EnRendezVousRoute: typeof EnRendezVousRoute
+  EnSpecialitesRoute: typeof EnSpecialitesRoute
+  NlInformationsPratiquesRoute: typeof NlInformationsPratiquesRoute
+  NlLeCentreRoute: typeof NlLeCentreRoute
+  NlPraticiensRoute: typeof NlPraticiensRoute
+  NlRendezVousRoute: typeof NlRendezVousRoute
+  NlSpecialitesRoute: typeof NlSpecialitesRoute
+  EnIndexRoute: typeof EnIndexRoute
+  NlIndexRoute: typeof NlIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -152,6 +308,90 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nl/': {
+      id: '/nl/'
+      path: '/nl'
+      fullPath: '/nl/'
+      preLoaderRoute: typeof NlIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/': {
+      id: '/en/'
+      path: '/en'
+      fullPath: '/en/'
+      preLoaderRoute: typeof EnIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/specialites': {
+      id: '/nl/specialites'
+      path: '/nl/specialites'
+      fullPath: '/nl/specialites'
+      preLoaderRoute: typeof NlSpecialitesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/rendez-vous': {
+      id: '/nl/rendez-vous'
+      path: '/nl/rendez-vous'
+      fullPath: '/nl/rendez-vous'
+      preLoaderRoute: typeof NlRendezVousRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/praticiens': {
+      id: '/nl/praticiens'
+      path: '/nl/praticiens'
+      fullPath: '/nl/praticiens'
+      preLoaderRoute: typeof NlPraticiensRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/le-centre': {
+      id: '/nl/le-centre'
+      path: '/nl/le-centre'
+      fullPath: '/nl/le-centre'
+      preLoaderRoute: typeof NlLeCentreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nl/informations-pratiques': {
+      id: '/nl/informations-pratiques'
+      path: '/nl/informations-pratiques'
+      fullPath: '/nl/informations-pratiques'
+      preLoaderRoute: typeof NlInformationsPratiquesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/specialites': {
+      id: '/en/specialites'
+      path: '/en/specialites'
+      fullPath: '/en/specialites'
+      preLoaderRoute: typeof EnSpecialitesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/rendez-vous': {
+      id: '/en/rendez-vous'
+      path: '/en/rendez-vous'
+      fullPath: '/en/rendez-vous'
+      preLoaderRoute: typeof EnRendezVousRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/praticiens': {
+      id: '/en/praticiens'
+      path: '/en/praticiens'
+      fullPath: '/en/praticiens'
+      preLoaderRoute: typeof EnPraticiensRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/le-centre': {
+      id: '/en/le-centre'
+      path: '/en/le-centre'
+      fullPath: '/en/le-centre'
+      preLoaderRoute: typeof EnLeCentreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/en/informations-pratiques': {
+      id: '/en/informations-pratiques'
+      path: '/en/informations-pratiques'
+      fullPath: '/en/informations-pratiques'
+      preLoaderRoute: typeof EnInformationsPratiquesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -162,6 +402,18 @@ const rootRouteChildren: RootRouteChildren = {
   PraticiensRoute: PraticiensRoute,
   RendezVousRoute: RendezVousRoute,
   SpecialitesRoute: SpecialitesRoute,
+  EnInformationsPratiquesRoute: EnInformationsPratiquesRoute,
+  EnLeCentreRoute: EnLeCentreRoute,
+  EnPraticiensRoute: EnPraticiensRoute,
+  EnRendezVousRoute: EnRendezVousRoute,
+  EnSpecialitesRoute: EnSpecialitesRoute,
+  NlInformationsPratiquesRoute: NlInformationsPratiquesRoute,
+  NlLeCentreRoute: NlLeCentreRoute,
+  NlPraticiensRoute: NlPraticiensRoute,
+  NlRendezVousRoute: NlRendezVousRoute,
+  NlSpecialitesRoute: NlSpecialitesRoute,
+  EnIndexRoute: EnIndexRoute,
+  NlIndexRoute: NlIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
