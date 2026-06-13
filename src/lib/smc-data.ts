@@ -1,3 +1,5 @@
+import type { Dictionary } from "@/i18n/dictionaries";
+
 export const SMC = {
   name: "Stockel Medical Center",
   short: "SMC",
@@ -9,64 +11,82 @@ export const SMC = {
   languages: ["FR", "EN", "NL"],
 };
 
-export const PRACTITIONERS = [
+export type PractitionerKey = "nohaFayed" | "chrysoulaKarampela" | "sueLizaEta";
+
+export interface Practitioner {
+  slug: string;
+  key: PractitionerKey;
+  name: string;
+  booking: string;
+  languages: string[];
+}
+
+export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
   {
     slug: "noha-fayed",
+    key: "nohaFayed",
     name: "Dr. Noha Fayed",
-    speciality: "Dentisterie",
-    booking: "https://www.doctoranytime.be/d/dentiste/noha-fayed?h=stockel-medical-center",
+    booking:
+      "https://www.doctoranytime.be/d/dentiste/noha-fayed?h=stockel-medical-center",
     languages: ["FR", "EN", "NL", "AR"],
-    schedule: "Lundi & jeudi · 9h – 16h",
   },
   {
     slug: "chrysoula-karampela",
+    key: "chrysoulaKarampela",
     name: "Dr. Chrysoula Karampela",
-    speciality: "Médecine générale & prises de sang",
-    booking: "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
+    booking:
+      "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
     languages: ["FR", "EN", "GR"],
-    schedule: "Lundi, mardi, jeudi & vendredi · 9h – 17h",
   },
   {
     slug: "sue-liza-eta",
+    key: "sueLizaEta",
     name: "Dr. Sue-Liza Eta",
-    speciality: "Chirurgie vasculaire",
-    booking: "https://www.doctoranytime.be/d/chirurgien-vasculaire/sue-liza-eta?h=stockel-medical-center",
+    booking:
+      "https://www.doctoranytime.be/d/chirurgien-vasculaire/sue-liza-eta?h=stockel-medical-center",
     languages: ["FR", "EN"],
-    schedule: "Lundi & samedi matin · 9h – 12h30",
   },
 ];
 
-export const SPECIALTIES = [
+export type SpecialtyKey =
+  | "dentisterie"
+  | "medecineGenerale"
+  | "prisesDeSang"
+  | "chirurgieVasculaire";
+
+export interface Specialty {
+  slug: string;
+  key: SpecialtyKey;
+  booking: string;
+}
+
+export const SPECIALTIES: ReadonlyArray<Specialty> = [
   {
     slug: "dentisterie",
-    title: "Dentisterie",
-    short: "Soins, esthétique et suivi dentaire pour adultes et enfants.",
-    description:
-      "Consultations, soins conservateurs, prévention et esthétique dentaire dans un cabinet équipé d'instruments modernes.",
+    key: "dentisterie",
     booking: PRACTITIONERS[0].booking,
   },
   {
     slug: "medecine-generale",
-    title: "Médecine générale",
-    short: "Votre médecin de famille à Stockel pour un suivi attentif.",
-    description:
-      "Consultations de médecine générale, suivi des pathologies chroniques, prévention, vaccinations et certificats.",
+    key: "medecineGenerale",
     booking: PRACTITIONERS[1].booking,
   },
   {
     slug: "prises-de-sang",
-    title: "Prises de sang",
-    short: "Prélèvements sur rendez-vous, sans temps d'attente.",
-    description:
-      "Prélèvements biologiques effectués par notre équipe infirmière, en partenariat avec un laboratoire agréé.",
+    key: "prisesDeSang",
     booking: PRACTITIONERS[1].booking,
   },
   {
     slug: "chirurgie-vasculaire",
-    title: "Chirurgie vasculaire",
-    short: "Consultations spécialisées en pathologies veineuses et artérielles.",
-    description:
-      "Évaluation, diagnostic et prise en charge des affections vasculaires par un chirurgien spécialisé.",
+    key: "chirurgieVasculaire",
     booking: PRACTITIONERS[2].booking,
   },
 ];
+
+export function getSpecialtyCopy(t: Dictionary, key: SpecialtyKey) {
+  return t.specialties[key];
+}
+
+export function getPractitionerCopy(t: Dictionary, key: PractitionerKey) {
+  return t.practitioners[key];
+}

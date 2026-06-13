@@ -1,52 +1,75 @@
-import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Calendar } from "lucide-react";
-
-
-const NAV = [
-  { to: "/le-centre", label: "Le centre" },
-  { to: "/specialites", label: "Spécialités" },
-  { to: "/praticiens", label: "Praticiens" },
-  { to: "/informations-pratiques", label: "Informations pratiques" },
-];
+import { LangLink } from "@/components/LangLink";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useT } from "@/i18n/use-translation";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const { t } = useT();
+  const nav = [
+    { to: "/le-centre", label: t.header.nav.leCentre },
+    { to: "/specialites", label: t.header.nav.specialites },
+    { to: "/praticiens", label: t.header.nav.praticiens },
+    {
+      to: "/informations-pratiques",
+      label: t.header.nav.informationsPratiques,
+    },
+  ];
+
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/85 border-b border-border/60">
       <div className="container-smc flex items-center justify-between h-20">
-        <Link to="/" className="flex items-center gap-3 group">
-          <img src="/images/logo-smc.png" alt="Stockel Medical Center" className="h-11 w-11 object-contain" />
+        <LangLink to="/" className="flex items-center gap-3 group">
+          <img
+            src="/images/logo-smc.png"
+            alt={t.header.brand}
+            className="h-11 w-11 object-contain"
+          />
           <div className="hidden sm:flex flex-col leading-tight">
-            <span className="font-serif text-lg text-ink">Stockel Medical Center</span>
-            <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">Woluwe Saint-Pierre</span>
+            <span className="font-serif text-lg text-ink">
+              {t.header.brand}
+            </span>
+            <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">
+              {t.header.subtitle}
+            </span>
           </div>
-        </Link>
+        </LangLink>
 
         <nav className="hidden lg:flex items-center gap-9">
-          {NAV.map((n) => (
-            <Link
+          {nav.map((n) => (
+            <LangLink
               key={n.to}
               to={n.to}
               className="text-sm text-foreground/80 hover:text-primary transition-colors"
               activeProps={{ className: "text-primary" }}
             >
               {n.label}
-            </Link>
+            </LangLink>
           ))}
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link to="/rendez-vous" className="hidden md:inline-flex btn-cta pulse-glow">
-            <Calendar className="h-4 w-4" />
-            Prendre rendez-vous
-          </Link>
-          <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden p-2 rounded-md hover:bg-muted"
-            aria-label="Menu"
+          <LanguageSwitcher className="hidden md:inline-flex" />
+          <LangLink
+            to="/rendez-vous"
+            className="hidden md:inline-flex btn-cta pulse-glow"
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            <Calendar className="h-4 w-4" />
+            {t.common.bookAppointment}
+          </LangLink>
+          <button
+            type="button"
+            onClick={() => setOpen(!open)}
+            className="lg:hidden p-3 -mr-2 rounded-md hover:bg-muted"
+            aria-label={t.common.menuAria}
+            aria-expanded={open}
+          >
+            {open ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </button>
         </div>
       </div>
@@ -54,19 +77,26 @@ export function SiteHeader() {
       {open && (
         <div className="lg:hidden border-t border-border bg-background">
           <div className="container-smc py-6 flex flex-col gap-4">
-            {NAV.map((n) => (
-              <Link
+            {nav.map((n) => (
+              <LangLink
                 key={n.to}
                 to={n.to}
                 onClick={() => setOpen(false)}
                 className="text-base py-1 text-foreground/85"
               >
                 {n.label}
-              </Link>
+              </LangLink>
             ))}
-            <Link to="/rendez-vous" onClick={() => setOpen(false)} className="btn-cta mt-2 self-start">
-              <Calendar className="h-4 w-4" /> Prendre rendez-vous
-            </Link>
+            <LangLink
+              to="/rendez-vous"
+              onClick={() => setOpen(false)}
+              className="btn-cta mt-2 self-start"
+            >
+              <Calendar className="h-4 w-4" /> {t.common.bookAppointment}
+            </LangLink>
+            <div className="pt-4 border-t border-border/60">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       )}
