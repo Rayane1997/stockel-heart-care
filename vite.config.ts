@@ -3,12 +3,14 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tailwindcss from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import netlify from "@netlify/vite-plugin-tanstack-start";
+import viteReact from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [
     tsconfigPaths(),
     tailwindcss(),
     tanstackStart(),
+    viteReact(),
     netlify(),
   ],
   resolve: {
