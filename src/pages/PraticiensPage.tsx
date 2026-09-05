@@ -1,4 +1,4 @@
-import { Calendar, Languages, Clock } from "lucide-react";
+import { Calendar, Languages } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SMC, PRACTITIONERS, getPractitionerCopy } from "@/lib/smc-data";
@@ -41,9 +41,6 @@ export function PraticiensPage() {
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <Languages className="h-3.5 w-3.5 shrink-0" />{" "}
                   {practitioner.languages.join(" · ")}
-                </div>
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <Clock className="h-3.5 w-3.5 shrink-0" /> {copy.schedule}
                 </div>
               </div>
               <a

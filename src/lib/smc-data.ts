@@ -11,7 +11,11 @@ export const SMC = {
   languages: ["FR", "EN", "NL"],
 };
 
-export type PractitionerKey = "nohaFayed" | "chrysoulaKarampela" | "sueLizaEta";
+export type PractitionerKey =
+  | "nohaFayed"
+  | "chrysoulaKarampela"
+  | "timothyLiu"
+  | "jabirBoujaid";
 
 export interface Practitioner {
   slug: string;
@@ -39,20 +43,24 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     languages: ["FR", "EN", "GR"],
   },
   {
-    slug: "sue-liza-eta",
-    key: "sueLizaEta",
-    name: "Dr. Sue-Liza Eta",
+    slug: "timothy-liu",
+    key: "timothyLiu",
+    name: "Dr. Timothy Liu",
     booking:
-      "https://www.doctoranytime.be/d/chirurgien-vasculaire/sue-liza-eta?h=stockel-medical-center",
+      "https://www.doctoranytime.be/d/dentiste/timothy-lui?h=stockel-medical-center",
     languages: ["FR", "EN"],
+  },
+  {
+    slug: "jabir-boujaid",
+    key: "jabirBoujaid",
+    name: "Dr. Jabir Boujaid",
+    booking:
+      "https://www.doctoranytime.be/d/dentiste/jabir-boujaid?h=stockel-medical-center",
+    languages: ["FR"],
   },
 ];
 
-export type SpecialtyKey =
-  | "dentisterie"
-  | "medecineGenerale"
-  | "prisesDeSang"
-  | "chirurgieVasculaire";
+export type SpecialtyKey = "dentisterie" | "medecineGenerale" | "prisesDeSang";
 
 export interface Specialty {
   slug: string;
@@ -75,11 +83,6 @@ export const SPECIALTIES: ReadonlyArray<Specialty> = [
     slug: "prises-de-sang",
     key: "prisesDeSang",
     booking: PRACTITIONERS[1].booking,
-  },
-  {
-    slug: "chirurgie-vasculaire",
-    key: "chirurgieVasculaire",
-    booking: PRACTITIONERS[2].booking,
   },
 ];
 
