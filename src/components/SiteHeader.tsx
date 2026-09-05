@@ -24,7 +24,7 @@ export function SiteHeader() {
           <img
             src="/images/logo-smc.png"
             alt={t.header.brand}
-            className="h-11 w-11 object-contain"
+            className="h-14 w-14 sm:h-11 sm:w-11 object-contain"
           />
           <div className="hidden sm:flex flex-col leading-tight">
             <span className="font-serif text-lg text-ink">

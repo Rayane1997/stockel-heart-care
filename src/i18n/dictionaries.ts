@@ -55,7 +55,7 @@ const fr = {
       eyebrow: "Nos spécialités",
       title: "Une médecine de proximité, à plusieurs voix.",
       body:
-        "Du suivi médical général aux soins dentaires, en passant par les prélèvements et la chirurgie vasculaire — chaque consultation se déroule dans un cabinet pensé pour votre confort.",
+        "Du suivi médical général aux soins dentaires, en passant par les prélèvements — chaque consultation se déroule dans un cabinet pensé pour votre confort.",
     },
     place: {
       eyebrow: "Le lieu",
@@ -215,26 +215,19 @@ const fr = {
       description:
         "Prélèvements biologiques effectués par notre équipe infirmière, en partenariat avec un laboratoire agréé.",
     },
-    chirurgieVasculaire: {
-      title: "Chirurgie vasculaire",
-      short:
-        "Consultations spécialisées en pathologies veineuses et artérielles.",
-      description:
-        "Évaluation, diagnostic et prise en charge des affections vasculaires par un chirurgien spécialisé.",
-    },
   },
   practitioners: {
     nohaFayed: {
       speciality: "Dentisterie",
-      schedule: "Lundi & jeudi · 9h – 16h",
     },
     chrysoulaKarampela: {
       speciality: "Médecine générale & prises de sang",
-      schedule: "Lundi, mardi, jeudi & vendredi · 9h – 17h",
     },
-    sueLizaEta: {
-      speciality: "Chirurgie vasculaire",
-      schedule: "Lundi & samedi matin · 9h – 12h30",
+    timothyLiu: {
+      speciality: "Dentisterie",
+    },
+    jabirBoujaid: {
+      speciality: "Dentisterie",
     },
   },
   footer: {
@@ -261,7 +254,7 @@ const fr = {
     home: {
       title: "Stockel Medical Center — Centre médical à Woluwe Saint-Pierre",
       description:
-        "Centre médical pluridisciplinaire à Stockel : dentisterie, médecine générale, prises de sang, chirurgie vasculaire. Cadre serein, équipe attentive, rendez-vous en ligne.",
+        "Centre médical pluridisciplinaire à Stockel : dentisterie, médecine générale, prises de sang. Cadre serein, équipe attentive, rendez-vous en ligne.",
       ogTitle: "Stockel Medical Center",
       ogDescription:
         "Centre médical pluridisciplinaire à Stockel — Woluwe Saint-Pierre.",
@@ -275,13 +268,13 @@ const fr = {
     specialites: {
       title: "Spécialités — Stockel Medical Center",
       description:
-        "Dentisterie, médecine générale, prises de sang, chirurgie vasculaire à Stockel — Woluwe Saint-Pierre.",
+        "Dentisterie, médecine générale, prises de sang à Stockel — Woluwe Saint-Pierre.",
       ogTitle: "Spécialités — Stockel Medical Center",
     },
     praticiens: {
       title: "Praticiens — Stockel Medical Center",
       description:
-        "Découvrez l'équipe du Stockel Medical Center : dentistes, médecins généralistes, chirurgien vasculaire.",
+        "Découvrez l'équipe du Stockel Medical Center : dentistes et médecins généralistes.",
       ogTitle: "Praticiens — Stockel Medical Center",
     },
     informationsPratiques: {
@@ -293,7 +286,7 @@ const fr = {
     rendezVous: {
       title: "Prendre rendez-vous — Stockel Medical Center",
       description:
-        "Réservez en ligne avec un praticien du Stockel Medical Center : dentisterie, médecine générale, prises de sang, chirurgie vasculaire.",
+        "Réservez en ligne avec un praticien du Stockel Medical Center : dentisterie, médecine générale, prises de sang.",
       ogTitle: "Prendre rendez-vous — Stockel Medical Center",
     },
   },
@@ -359,7 +352,7 @@ const nl: Dictionary = {
       eyebrow: "Onze specialiteiten",
       title: "Buurtgeneeskunde, met meerdere stemmen.",
       body:
-        "Van algemene medische opvolging tot tandheelkundige zorg, bloedafnames en vaatchirurgie — elke consultatie vindt plaats in een praktijk ontworpen voor uw comfort.",
+        "Van algemene medische opvolging tot tandheelkundige zorg en bloedafnames — elke consultatie vindt plaats in een praktijk ontworpen voor uw comfort.",
     },
     place: {
       eyebrow: "De praktijk",
@@ -520,26 +513,19 @@ const nl: Dictionary = {
       description:
         "Biologische bloedafnames uitgevoerd door ons verpleegkundig team, in samenwerking met een erkend laboratorium.",
     },
-    chirurgieVasculaire: {
-      title: "Vaatchirurgie",
-      short:
-        "Gespecialiseerde consultaties voor veneuze en arteriële aandoeningen.",
-      description:
-        "Evaluatie, diagnose en behandeling van vasculaire aandoeningen door een gespecialiseerd chirurg.",
-    },
   },
   practitioners: {
     nohaFayed: {
       speciality: "Tandheelkunde",
-      schedule: "Maandag & donderdag · 9u – 16u",
     },
     chrysoulaKarampela: {
       speciality: "Huisartsgeneeskunde & bloedafnames",
-      schedule: "Maandag, dinsdag, donderdag & vrijdag · 9u – 17u",
     },
-    sueLizaEta: {
-      speciality: "Vaatchirurgie",
-      schedule: "Maandag & zaterdagochtend · 9u – 12u30",
+    timothyLiu: {
+      speciality: "Tandheelkunde",
+    },
+    jabirBoujaid: {
+      speciality: "Tandheelkunde",
     },
   },
   footer: {
@@ -567,7 +553,7 @@ const nl: Dictionary = {
       title:
         "Stockel Medical Center — Medisch centrum in Sint-Pieters-Woluwe",
       description:
-        "Multidisciplinair medisch centrum in Stockel: tandheelkunde, huisartsgeneeskunde, bloedafnames, vaatchirurgie. Serene omgeving, attent team, online afspraken.",
+        "Multidisciplinair medisch centrum in Stockel: tandheelkunde, huisartsgeneeskunde, bloedafnames. Serene omgeving, attent team, online afspraken.",
       ogTitle: "Stockel Medical Center",
       ogDescription:
         "Multidisciplinair medisch centrum in Stockel — Sint-Pieters-Woluwe.",
@@ -581,13 +567,13 @@ const nl: Dictionary = {
     specialites: {
       title: "Specialiteiten — Stockel Medical Center",
       description:
-        "Tandheelkunde, huisartsgeneeskunde, bloedafnames, vaatchirurgie in Stockel — Sint-Pieters-Woluwe.",
+        "Tandheelkunde, huisartsgeneeskunde, bloedafnames in Stockel — Sint-Pieters-Woluwe.",
       ogTitle: "Specialiteiten — Stockel Medical Center",
     },
     praticiens: {
       title: "Artsen — Stockel Medical Center",
       description:
-        "Ontdek het team van het Stockel Medical Center: tandartsen, huisartsen, vaatchirurg.",
+        "Ontdek het team van het Stockel Medical Center: tandartsen en huisartsen.",
       ogTitle: "Artsen — Stockel Medical Center",
     },
     informationsPratiques: {
@@ -599,7 +585,7 @@ const nl: Dictionary = {
     rendezVous: {
       title: "Afspraak maken — Stockel Medical Center",
       description:
-        "Reserveer online bij een arts van het Stockel Medical Center: tandheelkunde, huisartsgeneeskunde, bloedafnames, vaatchirurgie.",
+        "Reserveer online bij een arts van het Stockel Medical Center: tandheelkunde, huisartsgeneeskunde, bloedafnames.",
       ogTitle: "Afspraak maken — Stockel Medical Center",
     },
   },
@@ -663,7 +649,7 @@ const en: Dictionary = {
       eyebrow: "Our specialties",
       title: "Community medicine, many voices.",
       body:
-        "From general medical follow-up to dental care, blood tests and vascular surgery — every consultation takes place in a practice designed for your comfort.",
+        "From general medical follow-up to dental care and blood tests — every consultation takes place in a practice designed for your comfort.",
     },
     place: {
       eyebrow: "The place",
@@ -826,26 +812,19 @@ const en: Dictionary = {
       description:
         "Biological samples taken by our nursing team, in partnership with an accredited laboratory.",
     },
-    chirurgieVasculaire: {
-      title: "Vascular surgery",
-      short:
-        "Specialised consultations for venous and arterial conditions.",
-      description:
-        "Assessment, diagnosis and management of vascular conditions by a specialised surgeon.",
-    },
   },
   practitioners: {
     nohaFayed: {
       speciality: "Dentistry",
-      schedule: "Monday & Thursday · 9am – 4pm",
     },
     chrysoulaKarampela: {
       speciality: "General medicine & blood tests",
-      schedule: "Monday, Tuesday, Thursday & Friday · 9am – 5pm",
     },
-    sueLizaEta: {
-      speciality: "Vascular surgery",
-      schedule: "Monday & Saturday morning · 9am – 12:30pm",
+    timothyLiu: {
+      speciality: "Dentistry",
+    },
+    jabirBoujaid: {
+      speciality: "Dentistry",
     },
   },
   footer: {
@@ -873,7 +852,7 @@ const en: Dictionary = {
       title:
         "Stockel Medical Center — Medical center in Woluwe Saint-Pierre",
       description:
-        "Multidisciplinary medical center in Stockel: dentistry, general medicine, blood tests, vascular surgery. Serene setting, attentive team, online booking.",
+        "Multidisciplinary medical center in Stockel: dentistry, general medicine, blood tests. Serene setting, attentive team, online booking.",
       ogTitle: "Stockel Medical Center",
       ogDescription:
         "Multidisciplinary medical center in Stockel — Woluwe Saint-Pierre.",
@@ -887,13 +866,13 @@ const en: Dictionary = {
     specialites: {
       title: "Specialties — Stockel Medical Center",
       description:
-        "Dentistry, general medicine, blood tests, vascular surgery in Stockel — Woluwe Saint-Pierre.",
+        "Dentistry, general medicine, blood tests in Stockel — Woluwe Saint-Pierre.",
       ogTitle: "Specialties — Stockel Medical Center",
     },
     praticiens: {
       title: "Practitioners — Stockel Medical Center",
       description:
-        "Discover the team of the Stockel Medical Center: dentists, general practitioners, vascular surgeon.",
+        "Discover the team of the Stockel Medical Center: dentists and general practitioners.",
       ogTitle: "Practitioners — Stockel Medical Center",
     },
     informationsPratiques: {
@@ -905,7 +884,7 @@ const en: Dictionary = {
     rendezVous: {
       title: "Book an appointment — Stockel Medical Center",
       description:
-        "Book online with a practitioner of the Stockel Medical Center: dentistry, general medicine, blood tests, vascular surgery.",
+        "Book online with a practitioner of the Stockel Medical Center: dentistry, general medicine, blood tests.",
       ogTitle: "Book an appointment — Stockel Medical Center",
     },
   },

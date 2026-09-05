@@ -1,4 +1,4 @@
-import { Calendar, Languages, Clock, ArrowUpRight, Phone } from "lucide-react";
+import { Calendar, Languages, ArrowUpRight, Phone } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { LangLink } from "@/components/LangLink";
@@ -46,13 +46,6 @@ export function RendezVousPage() {
               </h3>
 
               <div className="space-y-3 mb-8 text-sm text-muted-foreground">
-                <div className="flex items-start gap-2">
-                  <Clock
-                    className="h-4 w-4 mt-0.5 shrink-0 text-teal"
-                    strokeWidth={1.5}
-                  />
-                  <span>{copy.schedule}</span>
-                </div>
                 <div className="flex items-start gap-2">
                   <Languages
                     className="h-4 w-4 mt-0.5 shrink-0 text-teal"
