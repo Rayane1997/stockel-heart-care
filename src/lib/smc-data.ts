@@ -47,7 +47,7 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     key: "timothyLiu",
     name: "Dr. Timothy Liu",
     booking:
-      "https://www.doctoranytime.be/d/dentiste/timothy-lui?h=stockel-medical-center",
+      "https://www.doctoranytime.be/d/dentiste/timothy-lui",
     languages: ["FR", "EN"],
   },
   {
