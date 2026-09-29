@@ -47,8 +47,8 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     key: "timothyLiu",
     name: "Dr. Timothy Liu",
     booking:
-      "https://www.doctoranytime.be/d/dentiste/timothy-lui",
-    languages: ["FR", "EN"],
+      "https://www.doctoranytime.be/d/dentiste/timothy-liu",
+    languages: ["NL", "GR"],
   },
   {
     slug: "jabir-boujaid",
