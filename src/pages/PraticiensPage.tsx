@@ -28,8 +28,18 @@ export function PraticiensPage() {
               key={practitioner.slug}
               className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition"
             >
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-sand to-secondary/40 mb-5 flex items-center justify-center">
-                <span className="font-serif text-5xl text-primary/30">SMC</span>
+              <div className="aspect-square rounded-xl bg-gradient-to-br from-sand to-secondary/40 mb-5 flex items-center justify-center overflow-hidden">
+                {practitioner.photo ? (
+                  <img
+                    src={practitioner.photo}
+                    alt={practitioner.name}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <span className="font-serif text-5xl text-primary/30">
+                    SMC
+                  </span>
+                )}
               </div>
               <p className="text-xs tracking-[0.18em] uppercase text-teal mb-2">
                 {copy.speciality}

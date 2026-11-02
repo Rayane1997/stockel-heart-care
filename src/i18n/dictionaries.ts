@@ -229,6 +229,9 @@ const fr = {
     jabirBoujaid: {
       speciality: "Dentisterie",
     },
+    ghitaMouzahir: {
+      speciality: "Dentisterie",
+    },
   },
   footer: {
     contact: "Contact",
@@ -525,6 +528,9 @@ const nl: Dictionary = {
       speciality: "Tandheelkunde",
     },
     jabirBoujaid: {
+      speciality: "Tandheelkunde",
+    },
+    ghitaMouzahir: {
       speciality: "Tandheelkunde",
     },
   },
@@ -824,6 +830,9 @@ const en: Dictionary = {
       speciality: "Dentistry",
     },
     jabirBoujaid: {
+      speciality: "Dentistry",
+    },
+    ghitaMouzahir: {
       speciality: "Dentistry",
     },
   },

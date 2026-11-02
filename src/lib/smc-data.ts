@@ -15,7 +15,8 @@ export type PractitionerKey =
   | "nohaFayed"
   | "chrysoulaKarampela"
   | "timothyLiu"
-  | "jabirBoujaid";
+  | "jabirBoujaid"
+  | "ghitaMouzahir";
 
 export interface Practitioner {
   slug: string;
@@ -23,6 +24,7 @@ export interface Practitioner {
   name: string;
   booking: string;
   languages: string[];
+  photo?: string;
 }
 
 export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
@@ -41,14 +43,16 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
     languages: ["FR", "EN", "GR"],
+    photo: "/images/chrysoula-karampela.webp",
   },
   {
     slug: "timothy-liu",
     key: "timothyLiu",
     name: "Dr. Timothy Liu",
     booking:
-      "https://www.doctoranytime.be/d/dentiste/timothy-liu",
-    languages: ["NL", "GR"],
+      "https://www.doctoranytime.be/d/dentiste/timothy-liu?h=stockel-medical-center",
+    languages: ["FR", "EN", "NL", "GR"],
+    photo: "/images/timothy-liu.webp",
   },
   {
     slug: "jabir-boujaid",
@@ -57,6 +61,15 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/dentiste/jabir-boujaid?h=stockel-medical-center",
     languages: ["FR"],
+  },
+  {
+    slug: "ghita-mouzahir",
+    key: "ghitaMouzahir",
+    name: "Dr. Ghita Mouzahir",
+    booking:
+      "https://www.doctoranytime.be/d/dentiste/ghita-mouzahir?h=stockel-medical-center",
+    languages: ["FR", "EN", "AR", "ES"],
+    photo: "/images/ghita-mouzahir.webp",
   },
 ];
 
@@ -72,7 +85,7 @@ export const SPECIALTIES: ReadonlyArray<Specialty> = [
   {
     slug: "dentisterie",
     key: "dentisterie",
-    booking: PRACTITIONERS[0].booking,
+    booking: SMC.booking,
   },
   {
     slug: "medecine-generale",
