@@ -35,6 +35,7 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/dentiste/noha-fayed?h=stockel-medical-center",
     languages: ["FR", "EN", "NL", "AR"],
+    photo: "/images/noha-fayed.jpg",
   },
   {
     slug: "chrysoula-karampela",
@@ -43,7 +44,7 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/medecin-generaliste/chrysoula-karampela?h=stockel-medical-center",
     languages: ["FR", "EN", "GR"],
-    photo: "/images/chrysoula-karampela.webp",
+    photo: "/images/chrysoula-karampela.jpg",
   },
   {
     slug: "timothy-liu",
@@ -52,7 +53,7 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/dentiste/timothy-liu?h=stockel-medical-center",
     languages: ["FR", "EN", "NL", "GR"],
-    photo: "/images/timothy-liu.webp",
+    photo: "/images/timothy-liu.jpg",
   },
   {
     slug: "jabir-boujaid",
@@ -61,6 +62,7 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/dentiste/jabir-boujaid?h=stockel-medical-center",
     languages: ["FR"],
+    photo: "/images/jabir-boujaid.jpg",
   },
   {
     slug: "ghita-mouzahir",
@@ -69,7 +71,7 @@ export const PRACTITIONERS: ReadonlyArray<Practitioner> = [
     booking:
       "https://www.doctoranytime.be/d/dentiste/ghita-mouzahir?h=stockel-medical-center",
     languages: ["FR", "EN", "AR", "ES"],
-    photo: "/images/ghita-mouzahir.webp",
+    photo: "/images/ghita-mouzahir.jpg",
   },
 ];
 
