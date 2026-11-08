@@ -28,7 +28,7 @@ export function PraticiensPage() {
               key={practitioner.slug}
               className="bg-card border border-border rounded-2xl p-7 hover:border-primary/40 transition"
             >
-              <div className="aspect-square rounded-xl bg-gradient-to-br from-sand to-secondary/40 mb-5 flex items-center justify-center overflow-hidden">
+              <div className="aspect-[4/5] rounded-xl bg-gradient-to-br from-sand to-secondary/40 mb-5 flex items-center justify-center overflow-hidden">
                 {practitioner.photo ? (
                   <img
                     src={practitioner.photo}
